@@ -2,6 +2,12 @@
     filter: brightness(50%);
 }
 
+@media screen and (min-width:768px) {
+    .carousel-caption {
+        bottom: 160px;
+    }
+}
+
 @media screen and (min-width:992px) {
     .height-carousel {
         height: 90vh;
@@ -9,5 +15,11 @@
 
     .carousel-caption {
         bottom: 180px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card-f {
+        display: flex;
     }
 }
