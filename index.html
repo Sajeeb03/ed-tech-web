@@ -13,35 +13,82 @@
 <body>
     <header>
         <section class="container">
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg sticky-top bg-white">
                 <div class="container-fluid">
                     <a class="navbar-brand fw-bold" href="#">Learn With Us</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Courses</a>
+                                <a class="nav-link" href="#ourcourse">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Details</a>
+                                <a class="nav-link" href="#ourform">Register</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">About</a>
+                                <a class="nav-link" href="#askme">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Register</a>
+                                <a class="nav-link" href="#contactme">Contacts</a>
                             </li>
-                            <li class="nav-item">
-                                <button class="btn btn-primary">Register Here</button>
-                            </li>
-
                         </ul>
+                        <form>
+                            <div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Register Now
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Log in to Register</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">I have read
+                                                            <a href="">terms and conditions.</a></label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -50,7 +97,7 @@
         <!-- slider start  -->
         <section class="container mb-5">
             <div id="carouselExampleControls" class="carousel slide bg-gradient" data-bs-ride="carousel">
-                <div class="carousel-inner" style="height: 90vh;">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/cover/cover-1.jpg" class="img-fluid d-block w-100" alt="...">
                     </div>
@@ -79,7 +126,7 @@
     </header>
     <main>
         <!-- courses section start  -->
-        <section class="container">
+        <section class="container" id="ourcourse">
             <h3 class="text-center">Discover Our Popular <br> Courses</h3>
             <p class="text-center"> Now a days these courses are on their best form. <br> You can learn here easyly.
             </p>
@@ -208,7 +255,7 @@
             <button class="btn btn-primary d-grid col-3 mx-auto">See more courses</button>
         </section>
         <!-- Ready to join section  -->
-        <section class="container mt-5">
+        <section class="container mt-5" id="ourform">
             <div class="bg-primary rounded d-flex justify-content-around align-items-center p-4" style="height: 200px;">
                 <div class="text-white">
                     <h2> Ready to join?</h2>
@@ -262,10 +309,11 @@
             </div>
         </section>
         <!-- FAQ section  -->
-        <section class="container mt-5">
+        <section class="container mt-5" id="askme">
             <div class="d-grid col-sm-12 col-md-12 col-lg-6 mx-auto shadow-lg rounded-3">
                 <h2 class="text-center">Frequently Ask Questions !</h2>
-                <p class="text-center px-3">If you have the curiosity to know more. We are always here and happy to help
+                <p class="text-center px-3  ">If you have the curiosity to know more. We are always here and happy to
+                    help
                     you. Click them to learn
                     more!</p>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -347,7 +395,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contactme">
         <div style="height: 250px;" class="bg-dark d-flex flex-column justify-content-center alingn-items-center">
             <div class="text-white text-center">
                 <h2>Learn With Us</h2>
