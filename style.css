@@ -1,0 +1,13 @@
+.car-img {
+    filter: brightness(50%);
+}
+
+@media screen and (min-width:992px) {
+    .height-carousel {
+        height: 90vh;
+    }
+
+    .carousel-caption {
+        bottom: 180px;
+    }
+}
